@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src=script.js></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="frame">
+        <div class="boxed1">
+            <div class="h1" id="h1">
+                <h1 class="boxed" id="boxed">0</h1>
+            </div>
+
+            <div>
+                <table class="table1">
+                    <tr>
+                        <td><button id="%" class="dark">%</button></td>
+                        <td><button id="+/-" class="dark">+/-</button></td>
+                        <td><button id="C" class="dark1" onclick="back()">C</button></td>
+                        <td><button id="CE" class="dark1" onclick="clearall()">CE</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="1/x" class="dark">1/x</button></td>
+                        <td><button id="x^2" class="dark">x^2</button></td>
+                        <td><button id="sqrt" class="dark">sqrt</button></td>
+                        <td><button id="/" class="dark" onclick="operation('/')">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="7" onclick="show(7)">7</button></td>
+                        <td><button id="8" onclick="show(8)">8</button></td>
+                        <td><button id="9" onclick="show(9)">9</button></td>
+                        <td><button id="x" class="dark" onclick="operation('*')">x</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="4" onclick="show(4)">4</button></td>
+                        <td><button id="5" onclick="show(5)">5</button></td>
+                        <td><button id="6" onclick="show(6)">6</button></td>
+                        <td><button id="-" class="dark" onclick="operation('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="1" onclick="show(1)">1</button></td>
+                        <td><button id="2" onclick="show(2)">2</button></td>
+                        <td><button id="3" onclick="show(3)">3</button></td>
+                        <td><button id="+" class="dark" onclick="operation('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button></button></td>
+                        <td><button id="0" onclick="show(0)">0</button></td>
+                        <td><button id=".">.</button></td>
+                        <td><button id="=" class="dark" onclick="result()">=</button></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
