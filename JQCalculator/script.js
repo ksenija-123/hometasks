@@ -1,14 +1,3 @@
-// let opeartion
-
-// $("h1").html();
-
-// $("1").click(function() {
-//     alert("Hi! I'm an alert");
-// });
-
-// $("#boxed").css("background-color", "red");
-
-// let number = 
 let btnnr = 0;
 let number1;
 let operator;
@@ -31,6 +20,7 @@ function show(btnnr) {
         document.getElementById("boxed").innerHTML = number2;
     }
 };
+// $("#boxed").html();
 
 function operation(btnoperator) {
     if (number1 === undefined) {} else {
